@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('./fonts/LigatureSymbols/LigatureSymbols-2.11.eot');
+    src: url('./fonts/LigatureSymbols/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/LigatureSymbols/LigatureSymbols-2.11.woff') format('woff'),
+         url('./fonts/LigatureSymbols/LigatureSymbols-2.11.ttf') format('truetype'),
+         url('./fonts/LigatureSymbols/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+    src: url('./fonts/LigatureSymbols/LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lsf, .lsf-icon:before {
+    font-family: 'LigatureSymbols';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+	-webkit-font-feature-settings: "liga" 1, "dlig" 1;
+	-moz-font-feature-settings: "liga=1, dlig=1";
+	-ms-font-feature-settings: "liga" 1, "dlig" 1;
+	-o-font-feature-settings: "liga" 1, "dlig" 1;
+	font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.lsf-icon:before {
+    content:attr(title);
+    font-size:130%;
+}
+
+a.lsf-icon{
+    text-decoration: none;
+}
+.header > h1{
+}
+.header > h1 > a{
+    display: block;
+    height: 100px;
+    width: 980px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 100px;
+}
+.header > h1 > a:hover{
+    opacity: 0.8;
+}
+
+.header-logo{
+    margin: 5px 0 5px 5px;
+    width:88px;
+    height:88px;
+}
+.header > h1 > a > span{
+    vertical-align:top;
+    color: #555;
+}
+
+.horizontal-menu{
+    list-style: none;
+    margin: 0;
+  padding: 10px 0;
+  border:1px solid #ccc;
+}
+.horizontal-menu.nav_absolute{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #999;
+}
+.horizontal-menu > li{
+    height: 30px;
+    margin: -1px 0 0 0;
+}
+.horizontal-menu > li > a{
+    display: block;
+    height: 28px;
+    margin: 1px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #555;
+}
+.horizontal-menu > li > a:hover{
+    opacity: 0.8;
+}
+.horizontal-menu > li > a.actived{
+    background: #ddd;
+    position: relative;
+}
+.horizontal-menu > li > a.actived:after{
+    border: 10px solid transparent;
+    border-right: 10px solid #ccc;
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    top:6px;
+    right: -12px;
+}
+.absolute-nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+.contents{
+    margin:0 0 10px 10px;
+    position: relative;
+    border:1px solid #ccc;
+}
+.content{
+    margin:0 0 10px 0;
+    padding:1px;
+    position: relative;
+}
+.content-img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 340px;
+    margin: 10px 10px 10px 10px;
+}
+.contents-line{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 365px;
+    width: 1px;
+    background: #ccc;
+    z-index: 1;
+}
+.content-line{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 265px;
+    width: 1px;
+    background: #ccc;
+    z-index: 10;
+}
+.content-text{
+    margin: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.content-text > h3{
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.content > h2{
+    background: #eee;
+    margin: 0;
+    padding: 9px 9px 9px 15px;
+    position: relative;
+    z-index: 100;
+    color: #34495e;
+    text-shadow: 0px 2px 1px #FFF,0px -2px 1px #FFF,2px 0px 1px #FFF,-2px 0px 1px #FFF,2px 2px 1px #FFF,-2px 2px 1px #FFF,2px -2px 1px #FFF,-2px -2px 1px #FFF;
+}
+.content_info{
+  width:100%;
+}
+.content_info .fixed{
+  vertical-align:top;
+  padding:0 5px;
+  width:40px;
+  text-align:left;
+}
+
+.batch{
+    margin: 0 0 0 0;
+}
+.batch > .lsf-icon{
+    border:1px solid #555;
+    font-size: 12px;
+    color: #555;
+    border-radius: 2px;
+    padding: 2px 4px;
+    background: #fff;
+}
