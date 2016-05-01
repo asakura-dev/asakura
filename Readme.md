@@ -1,1 +1,1 @@
-asakuraのホームページ
+asakuraのホームページだ．
